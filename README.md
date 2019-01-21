@@ -1,18 +1,23 @@
-###################################
 # graph.py
+
+###################################
+
 A network representation that can be
 edited and analyized for the shortest path
+
 run >>python graph.py networkFile.txt
 to build network
+
 ###################################
 
 NOTE: Prints any errors, if you find any, are caught and print a warning
 
 Design: There is a graph, vertex, edge structure for the network. The heapobj and minheap are used exclusively for the shortest path algorithm.
-Main complex functions:
-path():
 
-	prints shortest path from_vertex to_vertex and total traversal weight
+Main complex functions:
+
+path(): prints shortest path from_vertex to_vertex and total traversal weight
+
 	Should be O(V(logV)+E). It runs Dijskra's algorithm.
 	To avoid incuring a V time penalty for searching through the minheap
 	to update a weight, instead I used a dictionary that pointed at the heapobj which allowed instant
@@ -73,9 +78,13 @@ Limitations:
 
 	-Python stinks at pointers. It only emulates them through objects. Next time I would use another language.
 
-Language: Python 3.6.2
+Language:
 
-Compiler: PyCharm 2017.2.3 
+	Python 3.6.2
+
+Compiler:
+
+	PyCharm 2017.2.3 
 
 To Run: 
 
